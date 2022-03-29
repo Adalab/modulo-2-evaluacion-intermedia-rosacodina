@@ -13,6 +13,14 @@ option1.addEventListener('click', () => {
   console.log(chosenNumber);
 });
 
+const option2 = document.querySelector('.js-bet');
+option2.addEventListener('click', () => {
+  const randomNumberTwo = getRandomNumber(200);
+  let betAmount = option2.value;
+  console.log(betAmount);
+});
+
+//FUNCIONES
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 }
