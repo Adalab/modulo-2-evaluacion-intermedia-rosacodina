@@ -24,3 +24,11 @@ option2.addEventListener('click', () => {
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 }
+
+function match(chosenNumber, randomNumber) {
+  if ((chosenNumber = randomNumber)) {
+    balance = balance + betAmount * 2;
+  } else {
+    balance = balance - betAmount;
+  }
+}
