@@ -20,13 +20,17 @@ option2.addEventListener('click', () => {
   console.log(betAmount);
 });
 
+const buttonClick = document.querySelector('');
+
 //FUNCIONES
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 }
 
-function match(chosenNumber, randomNumber) {
-  if ((chosenNumber = randomNumber)) {
+function match(chosenNumber) {
+  let randomNumber = getRandomNumber(6);
+
+  if (chosenNumber == randomNumber) {
     balance = balance + betAmount * 2;
   } else {
     balance = balance - betAmount;
