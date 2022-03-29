@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evaluación intermedia 2. Rosa Codina</title>
+  </head>
+
+  <body>
+    <header>
+      <section>
+        <h1>Dados y apuestas</h1>
+      </section>
+    </header>
+
+    <main>
+      <section>
+        <h2>Introduce aquí tu jugada:</h2>
+      </section>
+
+      <form action="/signup" method="post">
+        <label for="number">Qué número apuestas del 1 al 6</label>
+        <select id="number" name="number" class="js-select">
+          <option value="1" class="js-one">1</option>
+          <option value="2" class="js-2">2</option>
+          <option value="3" class="js-3">3</option>
+          <option value="4" class="js-4">4</option>
+          <option value="5" class="js-5">5</option>
+          <option value="6" class="js-6">6</option>
+        </select>
+
+        <input placeholder="¿Cuánto apuestas?" type="text" name="amount" />
+
+        <div>
+          <button>Jugar</button>
+        </div>
+      </form>
+
+      <section>
+        <h2>¡Vamos a jugar!</h2>
+        <p>Saldo: 50</p>
+      </section>
+    </main>
+
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+</html>
